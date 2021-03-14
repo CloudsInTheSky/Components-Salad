@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: lightgray;
+}
+
+h1 {
+    font-size: 1rem;
+    color: midnightblue;
+}
+
+h2 {
+    font-size: .7rem;
+    color: darkgray;
+}
+
+.booklist {
+    display: grid;
+    width: 90vw;
+    max-width: 1170;
+    margin: 4rem auto;
+    gap: 1rem;
+}
+
+@media screen and (min-width: 860px){
+    .booklist {
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+
+.book {
+    position: relative;
+    background-color: white;
+    box-shadow: 0 0 9px darkgray;
+    border-radius: 1rem;
+    padding: 2rem 3rem;
+}
+
+.book h1 {
+    padding: .5rem 0;
+}
